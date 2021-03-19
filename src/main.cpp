@@ -13,8 +13,8 @@ DHT dht(DHTPIN, DHTTYPE); // Initialize DHT sensor.
 //**************************************
 //*********** WIFI CONFIG **************
 //**************************************
-const char* ssid     = "GEEKHOUSE";
-const char* password = "caralibro20";
+const char* ssid     = "YOUR WIFI SSID";
+const char* password = "YOUR WIFI PASS";
 IPAddress ip(192, 168, 1, 70);
 IPAddress dns(1, 1, 1, 1);
 IPAddress gateway(192, 168, 1, 1); 
@@ -23,8 +23,8 @@ IPAddress subnet(255, 255, 255, 0);
 //**************************************
 //*********** MQTT CONFIG **************
 //**************************************
-const char* mqttServer = "192.168.1.20";
-const char* clientID = "MQTTJorge1";
+const char* mqttServer = "YOUR MQTT BROKER ADDRESS";
+const char* clientID = "GIVE YOUR CLIENT A NAME";
 const int mqttPort = 1883;
 #define humidity_topic "humedad/salon"
 #define temperature_topic "temperatura/salon"
@@ -35,6 +35,7 @@ const int mqttPort = 1883;
 WiFiClient espClient;
 PubSubClient client(espClient);
 #define DEBUG 0     // Activar debug ==1 Desactivar Debug==0
+
 //**************************************
 //************ FUNCIONES ***************
 //**************************************
